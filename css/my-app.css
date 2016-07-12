@@ -1,0 +1,95 @@
+.calendar-day {
+  padding: 15px 15px 15px 0;
+}
+.hour, .half-hour {
+  position: relative;
+  padding-left: 75px;
+}
+.hour .label {
+  position:absolute;
+  top: -10px;
+  left: 0;
+  width:75px;
+  text-align:center;
+  height: 20px;
+  line-height: 20px;
+  color: #666;
+}
+.guide {
+  height: 50px;
+  position: relative;
+  border-top: 1px solid #ccc;
+}
+.hour .guide {}
+.half-hour .guide {
+  border-top-style: dashed;
+}
+.event {
+  background: #ED5C65;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  z-index: 10;
+}
+.lunch {
+  background: #1abc9c;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  z-index: 10;
+}
+.break {
+  background: #9b59b6;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  z-index: 10;
+}
+.uworld {
+  background: #2c3e50;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  z-index: 10;
+}
+.pharmacology {
+  background: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  z-index: 10;
+}
+
+.card-header {
+  background: #8B9DC3;
+}
