@@ -10,8 +10,39 @@ var mainView = myApp.addView('.view-main', {
     dynamicNavbar: true
 });
 
-var mySearchbar = $$('.searchbar')[0].f7Searchbar;
-mySearchbar.clear();
+// var mySearchbar = $$('.searchbar')[0].f7Searchbar;
+// mySearchbar.clear();
+
+function onDeviceReady() {
+      alert("device ready");
+
+      console.log("Decide ready");
+      document.removeEventListener('deviceready', onDeviceReady, false);
+
+      // Set AdMobAds options:
+      admob.setOptions({
+        publisherId:          "ca-app-pub-3080814933972938/6115720607",  // Required
+        interstitialAdId:     "ca-app-pub-3080814933972938/9188437002",  // Optional
+        tappxIdiOS:           "/120940746/Pub-11818-iOS-0312",            // Optional
+        tappxIdAndroid:       "/120940746/Pub-11819-Android-0386",        // Optional
+        tappxShare:           0.5                                        // Optional
+      });
+
+      // Start showing banners (atomatic when autoShowBanner is set to true)
+      admob.createBannerView();
+      admob.showBanner(admob.BannerSize.BANNER, admob.Position.BOTTOM_APP);
+
+      // Request interstitial (will present automatically when autoShowInterstitial is set to true)
+      admob.requestInterstitialAd();
+
+      admob.isInterstitialReady(function(isReady){
+      if(isReady){
+              admob.showInterstitial();
+          }
+      });
+}
+
+document.addEventListener("deviceready", onDeviceReady, false);
 
 // Callbacks to run specific code for specific pages, for example for About page:
 // myApp.onPageInit('about', function (page) {

@@ -2,10 +2,10 @@
     <widget xmlns="http://www.w3.org/ns/widgets"
         xmlns:gap="http://phonegap.com/ns/1.0"
         id="guide.medstudy.usmle.step1"
-        versionCode="11"
-        version="1.0.1"
-        ios-CFBundleVersion="1.1"
-        ios-CFBundleShortVersionString="1.1">
+        versionCode="12"
+        version="1.0.2"
+        ios-CFBundleVersion="1.2"
+        ios-CFBundleShortVersionString="1.2">
 
     <!-- versionCode is optional and Android only -->
 
@@ -63,6 +63,11 @@
     <author email="shakethis1213@gmail.com">
         Ashish Patel
     </author>
+
+    <!-- <plugin name="com.admob.google" spec="4.0.8" source="pgb" /> -->
+    <plugin name="phonegap-admob" spec="4.1.11" />
+
+
     <!-- <gap:config-file platform="ios" parent="CFBundleVersion" overwrite="true">
         <string>1.0</string>
     </gap:config-file>
